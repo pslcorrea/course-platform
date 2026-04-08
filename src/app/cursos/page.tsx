@@ -1,3 +1,4 @@
+import { Section } from "@/src/components/section/Section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 export default function PageCursos() {
   return (
     <main>
-      <h1>Cursos</h1>
+      <Section title="Todos os Cursos" variant="grid" courses={[]} />
     </main>
   );
 }
